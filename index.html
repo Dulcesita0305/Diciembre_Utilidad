@@ -1,0 +1,1098 @@
+<!DOCTYPE html><html lang="es"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estado de Resultados y Rentabilidad — Diciembre | Inoo</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">/** @type {import('tailwindcss').Config} */
+globalThis.tailwind = globalThis.tailwind || {};
+globalThis.tailwind.config = {
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        'indigo-accent': '#4338CA',
+        'indigo-tint': '#EEF2FF',
+        'emerald-accent': '#059669',
+        'emerald-tint': '#ECFDF5',
+        'amber-accent': '#D97706',
+        'amber-tint': '#FFFBEB',
+        'coral-accent': '#E11D48',
+        'coral-tint': '#FFF1F2',
+        'light-primary': '#2A14B4',
+        'light-on-primary': '#FFFFFF',
+        'light-primary-container': '#4338CA',
+        'light-on-primary-container': '#FFFFFF',
+        'light-secondary': '#006C4A',
+        'light-on-secondary': '#FFFFFF',
+        'light-secondary-container': '#82F5C1',
+        'light-on-secondary-container': '#00714E',
+        'light-tertiary': '#5C2F00',
+        'light-on-tertiary': '#FFFFFF',
+        'light-tertiary-container': '#7D4200',
+        'light-on-tertiary-container': '#FFB477',
+        'light-error': '#BA1A1A',
+        'light-on-error': '#FFFFFF',
+        'light-error-container': '#FFDAD6',
+        'light-on-error-container': '#93000A',
+        'light-background': '#F8FAFC',
+        'light-on-background': '#1B1B23',
+        'light-surface': '#F8FAFC',
+        'light-surface-dim': '#E2E8F0',
+        'light-surface-bright': '#FFFFFF',
+        'light-surface-container-lowest': '#FFFFFF',
+        'light-surface-container-low': '#F1F5F9',
+        'light-surface-container': '#F0ECF8',
+        'light-surface-container-high': '#EAE6F3',
+        'light-surface-container-highest': '#E4E1ED',
+        'light-on-surface': '#1B1B23',
+        'light-surface-variant': '#E4E0F3',
+        'light-on-surface-variant': '#464554',
+        'light-outline': '#777586',
+        'light-outline-variant': '#CBD5E1',
+        'light-inverse-surface': '#302F39',
+        'light-inverse-on-surface': '#F3EFFB',
+        'light-inverse-primary': '#C3C0FF',
+        'light-shadow': '#000000',
+        'light-scrim': '#000000',
+        'dark-primary': '#C3C0FF',
+        'dark-on-primary': '#1F00A4',
+        'dark-primary-container': '#4338CA',
+        'dark-on-primary-container': '#C1BEFF',
+        'dark-secondary': '#68DBA9',
+        'dark-on-secondary': '#003825',
+        'dark-secondary-container': '#25A475',
+        'dark-on-secondary-container': '#002114',
+        'dark-tertiary': '#FFB77D',
+        'dark-on-tertiary': '#4D2600',
+        'dark-tertiary-container': '#7D4200',
+        'dark-on-tertiary-container': '#FFB477',
+        'dark-error': '#FFB4AB',
+        'dark-on-error': '#690005',
+        'dark-error-container': '#93000A',
+        'dark-on-error-container': '#FFDAD6',
+        'dark-background': '#13121B',
+        'dark-on-background': '#E4E1ED',
+        'dark-surface': '#13121B',
+        'dark-surface-dim': '#13121B',
+        'dark-surface-bright': '#393842',
+        'dark-surface-container-lowest': '#0E0D15',
+        'dark-surface-container-low': '#1B1B23',
+        'dark-surface-container': '#1F1F27',
+        'dark-surface-container-high': '#2A2932',
+        'dark-surface-container-highest': '#35343D',
+        'dark-on-surface': '#E4E1ED',
+        'dark-surface-variant': '#464554',
+        'dark-on-surface-variant': '#C7C4D7',
+        'dark-outline': '#918FA0',
+        'dark-outline-variant': '#464554',
+        'dark-inverse-surface': '#E4E1ED',
+        'dark-inverse-on-surface': '#302F39',
+        'dark-inverse-primary': '#5148D7',
+        'dark-shadow': '#000000',
+        'dark-scrim': '#000000',
+      },
+      borderRadius: {
+        'sm': '4px',
+        'DEFAULT': '8px',
+        'md': '12px',
+        'lg': '16px',
+        'full': '9999px',
+      },
+      spacing: {
+        'gutter-xs': '4px',
+        'gutter-sm': '8px',
+        'gutter-md': '16px',
+        'gutter-lg': '24px',
+        'gutter-xl': '32px',
+        'section': '24px',
+        'page-margin': '24px',
+      },
+      fontFamily: {
+        'display': ['"Mulish"', 'sans-serif'],
+        'headline': ['"Mulish"', 'sans-serif'],
+        'title': ['"Instrument Sans"', 'sans-serif'],
+        'body': ['"Instrument Sans"', 'sans-serif'],
+        'label': ['"Instrument Sans"', 'sans-serif'],
+        'mono': ['"Source Code Pro"', 'monospace'],
+      },
+      fontSize: {
+        'display-lg': ['36px', { lineHeight: '44px', letterSpacing: '-0.5px', fontWeight: '700' }],
+        'display-lg-mobile': ['28px', { lineHeight: '34px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-lg': ['24px', { lineHeight: '32px', letterSpacing: '-0.25px', fontWeight: '700' }],
+        'headline-md': ['20px', { lineHeight: '28px', letterSpacing: '-0.15px', fontWeight: '700' }],
+        'title-md': ['16px', { lineHeight: '24px', letterSpacing: '0px', fontWeight: '600' }],
+        'title-sm': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '600' }],
+        'body-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '400' }],
+        'body-sm': ['12px', { lineHeight: '16px', letterSpacing: '0px', fontWeight: '400' }],
+        'label-lg': ['13px', { lineHeight: '18px', letterSpacing: '0.1px', fontWeight: '600' }],
+        'label-sm': ['11px', { lineHeight: '16px', letterSpacing: '0.25px', fontWeight: '600' }],
+        'mono-md': ['14px', { lineHeight: '20px', letterSpacing: '0px', fontWeight: '600' }],
+        'mono-sm': ['12px', { lineHeight: '16px', letterSpacing: '0px', fontWeight: '500' }],
+      },
+      transitionDuration: {
+        'state-change': '150ms',
+        'surface-enter': '250ms',
+      },
+      transitionDelay: {
+        'state-change': '0ms',
+        'surface-enter': '0ms',
+      },
+      transitionTimingFunction: {
+        'state-change': 'ease-out',
+        'surface-enter': 'cubic-bezier(0.2, 0, 0, 1)',
+      },
+    },
+  },
+};
+if (typeof module !== 'undefined') module.exports = globalThis.tailwind.config;
+</script>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&amp;family=Mulish:wght@600;700;800&amp;family=Source+Code+Pro:wght@500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet">
+  <style>
+    .material-symbols-outlined, .material-symbols-rounded, .material-symbols-sharp, .material-icons {
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      line-height: 1 !important;
+      box-sizing: content-box;
+      overflow: hidden;
+      white-space: nowrap;
+      direction: ltr;
+      vertical-align: middle;
+    }
+    input[type="range"].inoo-slider {
+      -webkit-appearance: none;
+      appearance: none;
+      height: 6px;
+      border-radius: 9999px;
+      background: #E2E8F0;
+      outline: none;
+    }
+    input[type="range"].inoo-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 9999px;
+      background: #4338CA;
+      border: 2px solid #FFFFFF;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+    input[type="range"].inoo-slider::-moz-range-thumb {
+      width: 18px;
+      height: 18px;
+      border-radius: 9999px;
+      background: #4338CA;
+      border: 2px solid #FFFFFF;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-light-surface text-light-on-surface font-body antialiased min-h-[1024px]" data-stitch-vh="min-h-[1024px]===min-h-screen">
+  <div class="min-h-[1024px] w-full max-w-[1360px] mx-auto px-gutter-md sm:px-gutter-lg py-gutter-lg flex flex-col gap-section" data-stitch-vh="min-h-[1024px]===min-h-screen">
+
+    <!-- 1. ENCABEZADO Y CONTROLES DE SIMULACIÓN -->
+    <header class="flex flex-col gap-gutter-md">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-gutter-md">
+        <div class="flex flex-col gap-gutter-xs">
+          <div class="flex items-center gap-gutter-sm">
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded bg-indigo-tint text-indigo-accent shrink-0">
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">monitoring</span>
+            </span>
+            <h1 class="font-headline text-display-lg-mobile sm:text-headline-lg text-light-on-surface text-balance" data-design-text-token="headline-lg">
+              Estado de Resultados y Rentabilidad — Diciembre | Inoo
+            </h1>
+          </div>
+          <p class="font-body text-body-md text-light-on-surface-variant text-pretty" data-design-text-token="body-md">
+            Análisis de rentabilidad sobre montos netos sin IGV (Moneda: S/ PEN)
+          </p>
+        </div>
+
+        <!-- Pestañas de vista -->
+        <div data-component-id="tabs-with-icon" data-component-type="tabs" data-component-variant="with-icon" class="shrink-0">
+          <div role="tablist" aria-label="Vistas del dashboard" class="inline-flex flex-wrap items-center gap-gutter-xs p-gutter-xs bg-light-surface-container-low border border-light-outline-variant rounded">
+            <button role="tab" id="tab-resumen" aria-selected="true" aria-controls="panel-resumen" tabindex="0" class="inline-flex items-center gap-gutter-sm px-gutter-md py-gutter-sm rounded bg-light-surface-container-lowest text-light-primary-container shadow-sm transition-colors duration-state-change ease-state-change">
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">analytics</span>
+              <span class="font-body text-label-lg" data-design-text-token="label-lg">Resumen Ejecutivo (P&amp;L)</span>
+            </button>
+            <button role="tab" id="tab-detalle" aria-selected="false" aria-controls="panel-detalle" tabindex="-1" class="inline-flex items-center gap-gutter-sm px-gutter-md py-gutter-sm rounded text-light-on-surface-variant hover:text-light-on-surface transition-colors duration-state-change ease-state-change">
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">table_rows</span>
+              <span class="font-body text-label-lg" data-design-text-token="label-lg">Detalle por Partida (30 conceptos)</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Barra de controles de simulación -->
+      <section aria-label="Controles de simulación" class="bg-light-surface-container-lowest border border-light-outline-variant rounded-md p-gutter-md shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-gutter-md items-center">
+        <!-- Slider de variación de ingresos -->
+        <div class="lg:col-span-7 flex flex-col gap-gutter-xs">
+          <label data-component-id="slider-continuous" data-component-type="slider" data-component-variant="continuous" class="flex flex-col gap-gutter-xs">
+            <div class="flex flex-wrap items-center justify-between gap-gutter-sm">
+              <div class="flex items-center gap-gutter-sm">
+                <span class="material-symbols-outlined text-title-md text-indigo-accent" aria-hidden="true">tune</span>
+                <span class="font-body text-label-lg text-light-on-surface" data-design-text-token="label-lg">Simular Variación de Ingresos (-30% a +30%, base 0%)</span>
+              </div>
+              <div class="flex items-center gap-gutter-sm">
+                <span id="slider-badge" class="inline-flex items-center px-gutter-sm py-gutter-xs rounded-full bg-indigo-tint text-indigo-accent font-mono text-mono-sm tabular-nums" data-design-text-token="mono-sm">
+                  0% (Base)
+                </span>
+                <button id="reset-sim-btn" type="button" class="hidden inline-flex items-center gap-gutter-xs px-gutter-sm py-gutter-xs rounded border border-light-outline-variant text-light-on-surface-variant hover:text-light-on-surface hover:bg-light-surface-container-low font-body text-label-sm transition-colors duration-state-change ease-state-change">
+                  <span class="material-symbols-outlined text-body-sm" aria-hidden="true">restart_alt</span>
+                  <span>Restablecer</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex items-center gap-gutter-md">
+              <span class="font-mono text-mono-sm text-light-on-surface-variant tabular-nums shrink-0" data-design-text-token="mono-sm">-30%</span>
+              <input id="revenue-slider" type="range" min="-30" max="30" value="0" step="1" class="inoo-slider w-full cursor-pointer" aria-label="Simular Variación de Ingresos">
+              <span class="font-mono text-mono-sm text-light-on-surface-variant tabular-nums shrink-0" data-design-text-token="mono-sm">+30%</span>
+            </div>
+          </label>
+        </div>
+
+        <!-- Toggle AFP Junio -->
+        <div class="lg:col-span-5 lg:border-l lg:border-light-outline-variant lg:pl-gutter-md flex items-center justify-between gap-gutter-md">
+          <label data-component-id="toggle-label" data-component-type="toggle" data-component-variant="with-label" class="w-full flex items-center justify-between gap-gutter-md cursor-pointer">
+            <div class="flex flex-col gap-gutter-xs">
+              <div class="flex items-center gap-gutter-xs">
+                <span class="font-body text-label-lg text-light-on-surface" data-design-text-token="label-lg">Excluir pago atrasado AFP Junio (S/ 812.80)</span>
+              </div>
+              <span id="afp-status-text" class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">
+                Márgenes contables reales del mes (incluye AFP Junio)
+              </span>
+            </div>
+            <button id="afp-toggle" type="button" role="switch" aria-checked="false" aria-label="Excluir pago atrasado AFP Junio" class="relative inline-flex h-6 w-11 shrink-0 cursor-pointer items-center rounded-full border-2 border-transparent bg-light-outline-variant transition-colors duration-state-change ease-state-change focus:outline-none focus:ring-2 focus:ring-light-primary-container focus:ring-offset-2">
+              <span id="afp-toggle-thumb" class="pointer-events-none inline-block h-5 w-5 translate-x-0 rounded-full bg-light-surface-container-lowest shadow-sm transition-transform duration-state-change ease-state-change"></span>
+            </button>
+          </label>
+        </div>
+      </section>
+    </header>
+
+    <!-- 2. TARJETAS KPI DE RENTABILIDAD (SOLO ESTOS 5 INDICADORES EN LA FILA SUPERIOR) -->
+    <section aria-label="Indicadores clave de rentabilidad" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-gutter-md items-stretch">
+      <!-- KPI 1: Margen Neto -->
+      <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="h-full bg-light-surface-container-lowest border border-light-outline-variant rounded-md p-gutter-md shadow-sm flex flex-col justify-between gap-gutter-sm">
+        <header>
+          <h2 class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">Margen Neto</h2>
+        </header>
+        <div class="flex flex-col gap-gutter-xs">
+          <div class="flex items-center justify-between gap-gutter-xs">
+            <p id="kpi-margen-neto" class="font-headline text-display-lg-mobile xl:text-display-lg text-light-secondary tabular-nums" data-design-text-token="display-lg">38.1%</p>
+            <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-emerald-tint text-light-secondary shrink-0">
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">savings</span>
+            </span>
+          </div>
+          <p id="kpi-utilidad-neta" class="font-body text-body-sm text-light-on-surface-variant tabular-nums" data-design-text-token="body-sm">Utilidad Neta: S/ 12,514.59</p>
+        </div>
+      </article>
+
+      <!-- KPI 2: Margen Operativo -->
+      <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="h-full bg-light-surface-container-lowest border border-light-outline-variant rounded-md p-gutter-md shadow-sm flex flex-col justify-between gap-gutter-sm">
+        <header>
+          <h2 class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">Margen Operativo</h2>
+        </header>
+        <div class="flex flex-col gap-gutter-xs">
+          <div class="flex items-center justify-between gap-gutter-xs">
+            <p id="kpi-margen-operativo" class="font-headline text-display-lg-mobile xl:text-display-lg text-light-secondary tabular-nums" data-design-text-token="display-lg">39.1%</p>
+            <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-emerald-tint text-light-secondary shrink-0">
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">trending_up</span>
+            </span>
+          </div>
+          <p id="kpi-utilidad-operativa" class="font-body text-body-sm text-light-on-surface-variant tabular-nums" data-design-text-token="body-sm">Utilidad Operativa: S/ 12,842.83</p>
+        </div>
+      </article>
+
+      <!-- KPI 3: Ratio de Carga Administrativa -->
+      <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="h-full bg-light-surface-container-lowest border border-light-outline-variant rounded-md p-gutter-md shadow-sm flex flex-col justify-between gap-gutter-sm">
+        <header>
+          <h2 class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">Carga Administrativa</h2>
+        </header>
+        <div class="flex flex-col gap-gutter-xs">
+          <div class="flex items-center justify-between gap-gutter-xs">
+            <p id="kpi-carga-adm" class="font-headline text-display-lg-mobile xl:text-display-lg text-light-tertiary-container tabular-nums" data-design-text-token="display-lg">20.5%</p>
+            <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-amber-tint text-light-tertiary-container shrink-0">
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">account_balance</span>
+            </span>
+          </div>
+          <p id="kpi-gastos-adm" class="font-body text-body-sm text-light-on-surface-variant tabular-nums" data-design-text-token="body-sm">Gastos Adm.: S/ 6,716.40</p>
+        </div>
+      </article>
+
+      <!-- KPI 4: Retorno sobre Inversión Comercial -->
+      <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="h-full bg-light-surface-container-lowest border border-light-outline-variant rounded-md p-gutter-md shadow-sm flex flex-col justify-between gap-gutter-sm">
+        <header>
+          <h2 class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">Retorno Inversión Com.</h2>
+        </header>
+        <div class="flex flex-col gap-gutter-xs">
+          <div class="flex items-center justify-between gap-gutter-xs">
+            <p id="kpi-roi-comercial" class="font-headline text-display-lg-mobile xl:text-display-lg text-indigo-accent tabular-nums" data-design-text-token="display-lg">7.1x</p>
+            <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-indigo-tint text-indigo-accent shrink-0">
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">campaign</span>
+            </span>
+          </div>
+          <p id="kpi-roi-detalle" class="font-body text-body-sm text-light-on-surface-variant tabular-nums" data-design-text-token="body-sm">S/ 32,824.39 Ingresos / S/ 4,593.50 Gastos Com.</p>
+        </div>
+      </article>
+
+      <!-- KPI 5: Punto de Equilibrio -->
+      <article data-component-id="card-elevated" data-component-type="card" data-component-variant="elevated" class="h-full bg-light-surface-container-lowest border border-light-outline-variant rounded-md p-gutter-md shadow-sm flex flex-col justify-between gap-gutter-sm">
+        <header>
+          <h2 class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">Punto de Equilibrio</h2>
+        </header>
+        <div class="flex flex-col gap-gutter-xs">
+          <div class="flex items-center justify-between gap-gutter-xs">
+            <p id="kpi-punto-equilibrio" class="font-headline text-headline-lg text-light-on-surface tabular-nums" data-design-text-token="headline-lg">S/ 19,981.56</p>
+            <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-indigo-tint text-indigo-accent shrink-0">
+              <span class="material-symbols-outlined text-title-md" aria-hidden="true">balance</span>
+            </span>
+          </div>
+          <p id="kpi-margen-seguridad" class="font-body text-body-sm text-light-on-surface-variant tabular-nums" data-design-text-token="body-sm">Margen de seguridad: 39.1% sobre ingresos actuales</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- PANEL 1: RESUMEN EJECUTIVO (P&L) -->
+    <main id="panel-resumen" role="tabpanel" aria-labelledby="tab-resumen" tabindex="0" class="flex flex-col gap-section">
+
+      <!-- 3. VISUALIZACIONES CENTRALES -->
+      <section aria-label="Visualizaciones de rentabilidad" class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-stretch">
+
+        <!-- Gráfico de Cascada (Waterfall Chart) -->
+        <article data-component-id="card-waterfall" data-component-type="card" data-component-variant="action" class="lg:col-span-7 h-full bg-light-surface-container-lowest border border-light-outline-variant rounded-md p-gutter-lg shadow-sm flex flex-col justify-between gap-gutter-md">
+          <header class="flex flex-wrap items-start justify-between gap-gutter-sm">
+            <div class="flex flex-col gap-gutter-xs">
+              <h2 class="font-headline text-title-md text-light-on-surface" data-design-text-token="title-md">
+                Cascada del Estado de Resultados (Base sin IGV)
+              </h2>
+              <p class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">
+                Puente financiero desde Ingresos Netos hasta Utilidad Neta Final
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-gutter-md">
+              <span class="inline-flex items-center gap-gutter-xs font-body text-label-sm text-light-on-surface-variant">
+                <span class="w-2.5 h-2.5 rounded-sm bg-indigo-accent"></span> Ingresos
+              </span>
+              <span class="inline-flex items-center gap-gutter-xs font-body text-label-sm text-light-on-surface-variant">
+                <span class="w-2.5 h-2.5 rounded-sm bg-amber-accent"></span> Costos/Gastos
+              </span>
+              <span class="inline-flex items-center gap-gutter-xs font-body text-label-sm text-light-on-surface-variant">
+                <span class="w-2.5 h-2.5 rounded-sm bg-emerald-accent"></span> Utilidades
+              </span>
+            </div>
+          </header>
+
+          <div id="waterfall-container" class="w-full overflow-x-auto">
+            <!-- Renderizado dinámico SVG del Waterfall Chart -->
+          </div>
+
+          <footer class="pt-gutter-sm border-t border-light-outline-variant flex flex-wrap items-center justify-between gap-gutter-sm">
+            <span class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">
+              Porcentajes calculados sobre Ingresos Netos simulados
+            </span>
+            <span id="waterfall-summary-pill" class="font-mono text-mono-sm text-light-secondary tabular-nums" data-design-text-token="mono-sm">
+              Conversión neta: 38.1%
+            </span>
+          </footer>
+        </article>
+
+        <!-- Gráfico de Barras Comparativas de Eficiencia -->
+        <article data-component-id="card-efficiency" data-component-type="card" data-component-variant="action" class="lg:col-span-5 h-full bg-light-surface-container-lowest border border-light-outline-variant rounded-md p-gutter-lg shadow-sm flex flex-col justify-between gap-gutter-md">
+          <header class="flex flex-col gap-gutter-xs">
+            <h2 class="font-headline text-title-md text-light-on-surface" data-design-text-token="title-md">
+              Comparativa de Eficiencia: Ingresos vs. Punto de Equilibrio
+            </h2>
+            <p class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">
+              Cobertura de costos y gastos totales frente al colchón de utilidad operativa
+            </p>
+          </header>
+
+          <div id="efficiency-chart-container" class="flex flex-col gap-gutter-lg py-gutter-sm">
+            <!-- Renderizado dinámico de barras comparativas -->
+          </div>
+
+          <footer class="pt-gutter-sm border-t border-light-outline-variant flex items-center justify-between gap-gutter-sm">
+            <span class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">
+              Colchón operativo sobre equilibrio
+            </span>
+            <span id="efficiency-cushion-pill" class="inline-flex items-center px-gutter-sm py-gutter-xs rounded-full bg-emerald-tint text-light-secondary font-mono text-mono-sm tabular-nums" data-design-text-token="mono-sm">
+              +S/ 12,842.83
+            </span>
+          </footer>
+        </article>
+      </section>
+
+      <!-- 4. TABLA DE ESTADO DE RESULTADOS DESPLEGABLE (ACORDEÓN POR CATEGORÍA) -->
+      <section aria-label="Tabla de Estado de Resultados desplegable" class="flex flex-col gap-gutter-sm">
+        <div class="flex flex-wrap items-center justify-between gap-gutter-sm">
+          <div class="flex flex-col gap-gutter-xs">
+            <h2 class="font-headline text-headline-md text-light-on-surface" data-design-text-token="headline-md">
+              Estado de Resultados Desplegable
+            </h2>
+            <p class="font-body text-body-sm text-light-on-surface-variant" data-design-text-token="body-sm">
+              Haz clic en Costos de Ventas, Gastos Administrativos o Gastos Comerciales para desplegar sus partidas exactas
+            </p>
+          </div>
+          <div class="flex items-center gap-gutter-sm">
+            <button id="expand-all-btn" type="button" class="inline-flex items-center gap-gutter-xs px-gutter-md py-gutter-xs rounded border border-light-outline-variant bg-light-surface-container-lowest hover:bg-light-surface-container-low font-body text-label-sm text-light-on-surface transition-colors duration-state-change ease-state-change">
+              <span class="material-symbols-outlined text-body-md" aria-hidden="true">unfold_more</span>
+              <span>Expandir todo</span>
+            </button>
+            <button id="collapse-all-btn" type="button" class="inline-flex items-center gap-gutter-xs px-gutter-md py-gutter-xs rounded border border-light-outline-variant bg-light-surface-container-lowest hover:bg-light-surface-container-low font-body text-label-sm text-light-on-surface transition-colors duration-state-change ease-state-change">
+              <span class="material-symbols-outlined text-body-md" aria-hidden="true">unfold_less</span>
+              <span>Contraer todo</span>
+            </button>
+          </div>
+        </div>
+
+        <div data-component-id="table-interactive" data-component-type="table" data-component-variant="interactive" class="w-full overflow-x-auto bg-light-surface-container-lowest border border-light-outline-variant rounded-md shadow-sm">
+          <table class="w-full border-collapse text-left">
+            <thead class="bg-light-surface-container-low border-b border-light-outline-variant">
+              <tr>
+                <th scope="col" class="px-gutter-md py-gutter-sm">
+                  <span class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">Concepto / Partida</span>
+                </th>
+                <th scope="col" class="px-gutter-md py-gutter-sm">
+                  <span class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">Naturaleza</span>
+                </th>
+                <th scope="col" class="px-gutter-md py-gutter-sm text-right">
+                  <span class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">Monto Neto (S/)</span>
+                </th>
+                <th scope="col" class="px-gutter-md py-gutter-sm text-right">
+                  <span class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">% s/ Ingresos</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody id="pnl-accordion-body" class="divide-y divide-light-outline-variant">
+              <!-- Filas generadas dinámicamente -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <!-- PANEL 2: DETALLE POR PARTIDA (30 CONCEPTOS) -->
+    <section id="panel-detalle" role="tabpanel" aria-labelledby="tab-detalle" tabindex="0" hidden class="flex flex-col gap-gutter-md">
+      <div class="bg-light-surface-container-lowest border border-light-outline-variant rounded-md p-gutter-md shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-gutter-md">
+        <div class="flex flex-wrap items-center gap-gutter-xs" role="group" aria-label="Filtrar por categoría">
+          <button type="button" data-cat-filter="all" class="cat-filter-btn px-gutter-md py-gutter-xs rounded-full bg-light-primary-container text-light-on-primary-container font-body text-label-lg transition-colors duration-state-change ease-state-change">
+            Todas (30)
+          </button>
+          <button type="button" data-cat-filter="costos" class="cat-filter-btn px-gutter-md py-gutter-xs rounded-full bg-light-surface-container-low text-light-on-surface-variant hover:text-light-on-surface font-body text-label-lg transition-colors duration-state-change ease-state-change">
+            Costos de Ventas (9)
+          </button>
+          <button type="button" data-cat-filter="adm" class="cat-filter-btn px-gutter-md py-gutter-xs rounded-full bg-light-surface-container-low text-light-on-surface-variant hover:text-light-on-surface font-body text-label-lg transition-colors duration-state-change ease-state-change">
+            Gastos Administrativos (12)
+          </button>
+          <button type="button" data-cat-filter="com" class="cat-filter-btn px-gutter-md py-gutter-xs rounded-full bg-light-surface-container-low text-light-on-surface-variant hover:text-light-on-surface font-body text-label-lg transition-colors duration-state-change ease-state-change">
+            Gastos Comerciales (9)
+          </button>
+        </div>
+
+        <div class="relative min-w-64">
+          <span class="material-symbols-outlined text-title-md text-light-on-surface-variant absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" aria-hidden="true">search</span>
+          <input id="detail-search-input" type="search" placeholder="Buscar partida..." class="w-full pl-9 pr-3 py-1.5 rounded border border-light-outline-variant bg-light-surface text-body-md text-light-on-surface placeholder:text-light-outline focus:border-light-primary-container focus:ring-1 focus:ring-light-primary-container">
+        </div>
+      </div>
+
+      <div data-component-id="table-standard" data-component-type="table" data-component-variant="standard" class="w-full overflow-x-auto bg-light-surface-container-lowest border border-light-outline-variant rounded-md shadow-sm">
+        <table class="w-full border-collapse text-left">
+          <thead class="bg-light-surface-container-low border-b border-light-outline-variant">
+            <tr>
+              <th scope="col" class="px-gutter-md py-gutter-sm">
+                <span class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">#</span>
+              </th>
+              <th scope="col" class="px-gutter-md py-gutter-sm">
+                <span class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">Partida</span>
+              </th>
+              <th scope="col" class="px-gutter-md py-gutter-sm">
+                <span class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">Categoría</span>
+              </th>
+              <th scope="col" class="px-gutter-md py-gutter-sm text-right">
+                <span class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">Monto Neto (S/)</span>
+              </th>
+              <th scope="col" class="px-gutter-md py-gutter-sm text-right">
+                <span class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">% s/ Categoría</span>
+              </th>
+              <th scope="col" class="px-gutter-md py-gutter-sm text-right">
+                <span class="font-body text-label-sm text-light-on-surface-variant uppercase" data-design-text-token="label-sm">% s/ Ingresos</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="detail-table-body" class="divide-y divide-light-outline-variant">
+            <!-- 30 conceptos generados dinámicamente -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div>
+
+  <script>
+    (function () {
+      const BASE_REVENUE = 32824.39;
+      const TAX_RATE = 0.01;
+
+      const CATEGORIES = {
+        costos: {
+          id: 'costos',
+          label: 'Costos de Ventas',
+          items: [
+            { name: 'Hugo', amount: 2500.00 },
+            { name: 'Ricardo Caja', amount: 2400.00 },
+            { name: 'Pamela Livia', amount: 1300.00 },
+            { name: 'Arleth', amount: 1250.00 },
+            { name: 'Google Drive', amount: 728.66 },
+            { name: 'Canva', amount: 240.00 },
+            { name: 'Adobe 4 usuarios', amount: 137.00 },
+            { name: 'Envatos', amount: 58.00 },
+            { name: 'Freepik', amount: 58.00 }
+          ]
+        },
+        adm: {
+          id: 'adm',
+          label: 'Gastos Administrativos',
+          items: [
+            { name: 'Alquiler', amount: 2700.00 },
+            { name: 'Omar', amount: 1000.00 },
+            { name: 'Contador - Juan Carlos', amount: 900.00 },
+            { name: 'AFP Junio [Alerta: mes anterior]', amount: 812.80, isAfp: true },
+            { name: 'Luz - 486592 - Omar', amount: 412.20 },
+            { name: 'EsSalud Diciembre', amount: 293.00 },
+            { name: 'Olga', amount: 270.00 },
+            { name: 'Arbitrios', amount: 100.00 },
+            { name: 'Internet BFT', amount: 85.00 },
+            { name: 'Gabriel - Soporte Inoo', amount: 68.40 },
+            { name: 'SIS', amount: 45.00 },
+            { name: 'El Agua - 26084582 - Omar', amount: 30.00 }
+          ]
+        },
+        com: {
+          id: 'com',
+          label: 'Gastos Comerciales',
+          items: [
+            { name: 'Publicidad FB Ads', amount: 1500.00 },
+            { name: 'Mauricio', amount: 750.00 },
+            { name: 'Jean Piere', amount: 700.00 },
+            { name: 'Virginia Palomino', amount: 410.00 },
+            { name: 'GHLevel - Diciembre', amount: 350.00 },
+            { name: 'Diego Seminario Swiss', amount: 250.00 },
+            { name: 'Entel Pago', amount: 233.50 },
+            { name: 'Porta Inoo', amount: 200.00 },
+            { name: 'Pago de Google', amount: 200.00 }
+          ]
+        }
+      };
+
+      const state = {
+        variationPct: 0,
+        excludeAfp: false,
+        activeTab: 'resumen',
+        expanded: { costos: false, adm: false, com: false },
+        detailFilter: 'all',
+        detailSearch: ''
+      };
+
+      function fmtPEN(val) {
+        const absVal = Math.abs(val);
+        const formatted = absVal.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+        return (val < 0 ? '-S/ ' : 'S/ ') + formatted;
+      }
+
+      function fmtPct(val) {
+        return val.toFixed(1) + '%';
+      }
+
+      function computeMetrics() {
+        const ingresos = BASE_REVENUE * (1 + state.variationPct / 100);
+        const costosVentas = CATEGORIES.costos.items.reduce((s, i) => s + i.amount, 0);
+        const gastosAdm = CATEGORIES.adm.items.reduce((s, i) => {
+          if (state.excludeAfp && i.isAfp) return s;
+          return s + i.amount;
+        }, 0);
+        const gastosCom = CATEGORIES.com.items.reduce((s, i) => s + i.amount, 0);
+
+        const utilidadBruta = ingresos - costosVentas;
+        const utilidadOperativa = utilidadBruta - gastosAdm - gastosCom;
+        const impuestoRenta = Math.round(ingresos * TAX_RATE * 100) / 100;
+        const utilidadNeta = utilidadOperativa - impuestoRenta;
+
+        const margenNeto = (utilidadNeta / ingresos) * 100;
+        const margenOperativo = (utilidadOperativa / ingresos) * 100;
+        const cargaAdm = (gastosAdm / ingresos) * 100;
+        const roiComercial = ingresos / gastosCom;
+        const puntoEquilibrio = costosVentas + gastosAdm + gastosCom;
+        const margenSeguridad = ((ingresos - puntoEquilibrio) / ingresos) * 100;
+
+        return {
+          ingresos,
+          costosVentas,
+          utilidadBruta,
+          gastosAdm,
+          gastosCom,
+          utilidadOperativa,
+          impuestoRenta,
+          utilidadNeta,
+          margenNeto,
+          margenOperativo,
+          cargaAdm,
+          roiComercial,
+          puntoEquilibrio,
+          margenSeguridad
+        };
+      }
+
+      function updateKPIs(m) {
+        document.getElementById('kpi-margen-neto').textContent = fmtPct(m.margenNeto);
+        document.getElementById('kpi-margen-neto').className = 'font-headline text-display-lg-mobile xl:text-display-lg tabular-nums ' + (m.utilidadNeta >= 0 ? 'text-light-secondary' : 'text-light-error');
+        document.getElementById('kpi-utilidad-neta').textContent = 'Utilidad Neta: ' + fmtPEN(m.utilidadNeta);
+
+        document.getElementById('kpi-margen-operativo').textContent = fmtPct(m.margenOperativo);
+        document.getElementById('kpi-margen-operativo').className = 'font-headline text-display-lg-mobile xl:text-display-lg tabular-nums ' + (m.utilidadOperativa >= 0 ? 'text-light-secondary' : 'text-light-error');
+        document.getElementById('kpi-utilidad-operativa').textContent = 'Utilidad Operativa: ' + fmtPEN(m.utilidadOperativa);
+
+        document.getElementById('kpi-carga-adm').textContent = fmtPct(m.cargaAdm);
+        document.getElementById('kpi-gastos-adm').textContent = 'Gastos Adm.: ' + fmtPEN(m.gastosAdm);
+
+        document.getElementById('kpi-roi-comercial').textContent = m.roiComercial.toFixed(1) + 'x';
+        document.getElementById('kpi-roi-detalle').textContent = fmtPEN(m.ingresos) + ' Ingresos / ' + fmtPEN(m.gastosCom) + ' Gastos Com.';
+
+        document.getElementById('kpi-punto-equilibrio').textContent = fmtPEN(m.puntoEquilibrio);
+        document.getElementById('kpi-margen-seguridad').textContent = 'Margen de seguridad: ' + fmtPct(m.margenSeguridad) + ' sobre ingresos actuales';
+      }
+
+      function renderWaterfall(m) {
+        const container = document.getElementById('waterfall-container');
+        const steps = [
+          { label: 'Ingresos Netos', sub: '(sin IGV)', value: m.ingresos, start: 0, end: m.ingresos, type: 'revenue' },
+          { label: 'Costos de', sub: 'Ventas', value: -m.costosVentas, start: m.utilidadBruta, end: m.ingresos, type: 'cost' },
+          { label: 'Utilidad', sub: 'Bruta', value: m.utilidadBruta, start: 0, end: m.utilidadBruta, type: 'profit' },
+          { label: 'Gastos', sub: 'Admin.', value: -m.gastosAdm, start: m.utilidadBruta - m.gastosAdm, end: m.utilidadBruta, type: 'cost' },
+          { label: 'Gastos', sub: 'Comerciales', value: -m.gastosCom, start: m.utilidadOperativa, end: m.utilidadBruta - m.gastosAdm, type: 'cost' },
+          { label: 'Utilidad', sub: 'Operativa', value: m.utilidadOperativa, start: 0, end: m.utilidadOperativa, type: 'profit' },
+          { label: 'Impuesto', sub: 'Renta (1%)', value: -m.impuestoRenta, start: m.utilidadNeta, end: m.utilidadOperativa, type: 'tax' },
+          { label: 'Utilidad', sub: 'Neta Final', value: m.utilidadNeta, start: 0, end: m.utilidadNeta, type: 'profit' }
+        ];
+
+        const maxVal = Math.max(m.ingresos, m.puntoEquilibrio, 1) * 1.15;
+        const minVal = Math.min(0, m.utilidadOperativa, m.utilidadNeta);
+        const range = maxVal - minVal;
+
+        const svgW = 680;
+        const svgH = 290;
+        const padTop = 36;
+        const padBottom = 46;
+        const padLeft = 12;
+        const padRight = 12;
+        const chartH = svgH - padTop - padBottom;
+        const chartW = svgW - padLeft - padRight;
+        const colW = chartW / steps.length;
+        const barW = Math.min(54, colW * 0.62);
+
+        function yPos(val) {
+          return padTop + ((maxVal - val) / range) * chartH;
+        }
+
+        const colorMap = {
+          revenue: { fill: '#4338CA', text: '#2A14B4' },
+          cost: { fill: '#D97706', text: '#7D4200' },
+          tax: { fill: '#E11D48', text: '#93000A' },
+          profit: { fill: '#059669', text: '#006C4A' }
+        };
+
+        let svg = `<svg viewBox="0 0 ${svgW} ${svgH}" class="w-full min-w-[560px] h-auto" role="img" aria-label="Gráfico de Cascada del Estado de Resultados">`;
+
+        const zeroY = yPos(0);
+        svg += `<line x1="${padLeft}" y1="${zeroY}" x2="${svgW - padRight}" y2="${zeroY}" stroke="#CBD5E1" stroke-width="1" />`;
+
+        [0.25, 0.5, 0.75, 1].forEach(frac => {
+          const gy = yPos(maxVal * frac);
+          svg += `<line x1="${padLeft}" y1="${gy}" x2="${svgW - padRight}" y2="${gy}" stroke="#F1F5F9" stroke-width="1" stroke-dasharray="3 3" />`;
+        });
+
+        steps.forEach((s, idx) => {
+          const cx = padLeft + idx * colW + colW / 2;
+          const x = cx - barW / 2;
+          const topVal = Math.max(s.start, s.end);
+          const botVal = Math.min(s.start, s.end);
+          const yTop = yPos(topVal);
+          const yBot = yPos(botVal);
+          const h = Math.max(3, yBot - yTop);
+          const c = s.type === 'profit' && s.value < 0 ? colorMap.tax : colorMap[s.type];
+
+          if (idx > 0) {
+            const prev = steps[idx - 1];
+            const prevConnVal = prev.type === 'revenue' || prev.type === 'profit' ? prev.end : prev.start;
+            const connY = yPos(prevConnVal);
+            const prevRightX = padLeft + (idx - 1) * colW + colW / 2 + barW / 2;
+            svg += `<line x1="${prevRightX}" y1="${connY}" x2="${x}" y2="${connY}" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="3 3" />`;
+          }
+
+          svg += `<rect x="${x}" y="${yTop}" width="${barW}" height="${h}" rx="4" fill="${c.fill}" />`;
+
+          const signPrefix = s.type === 'revenue' ? '+' : (s.value < 0 ? '-' : '');
+          const labelAmt = signPrefix + 'S/ ' + Math.abs(s.value).toLocaleString('en-US', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+          const pctStr = fmtPct((Math.abs(s.value) / m.ingresos) * 100);
+
+          svg += `<text x="${cx}" y="${yTop - 16}" text-anchor="middle" font-family="Source Code Pro, monospace" font-size="10.5" font-weight="600" fill="${c.text}">${labelAmt}</text>`;
+          svg += `<text x="${cx}" y="${yTop - 5}" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="9.5" fill="#464554">(${pctStr})</text>`;
+
+          svg += `<text x="${cx}" y="${svgH - 22}" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="10.5" font-weight="600" fill="#1B1B23">${s.label}</text>`;
+          svg += `<text x="${cx}" y="${svgH - 9}" text-anchor="middle" font-family="Instrument Sans, sans-serif" font-size="10" fill="#464554">${s.sub}</text>`;
+        });
+
+        svg += `</svg>`;
+        container.innerHTML = svg;
+
+        const pill = document.getElementById('waterfall-summary-pill');
+        pill.textContent = 'Conversión neta: ' + fmtPct(m.margenNeto);
+        pill.className = 'font-mono text-mono-sm tabular-nums ' + (m.margenNeto >= 0 ? 'text-light-secondary' : 'text-light-error');
+      }
+
+      function renderEfficiencyChart(m) {
+        const container = document.getElementById('efficiency-chart-container');
+        const maxRef = Math.max(m.ingresos, m.puntoEquilibrio) * 1.08;
+        const revWidth = Math.min(100, (m.ingresos / maxRef) * 100);
+        const beWidth = Math.min(100, (m.puntoEquilibrio / maxRef) * 100);
+        const cushion = m.ingresos - m.puntoEquilibrio;
+        const cushionPct = m.margenSeguridad;
+        const isPositive = cushion >= 0;
+
+        container.innerHTML = `
+          <div class="flex flex-col gap-gutter-xs">
+            <div class="flex items-center justify-between gap-gutter-sm">
+              <span class="font-body text-title-sm text-light-on-surface">Ingresos Netos Actuales</span>
+              <span class="font-mono text-mono-md text-indigo-accent tabular-nums">${fmtPEN(m.ingresos)}</span>
+            </div>
+            <div class="w-full h-9 bg-light-surface-container-low rounded overflow-hidden flex items-center border border-light-outline-variant">
+              <div style="width: ${revWidth.toFixed(1)}%" class="h-full bg-indigo-accent flex items-center justify-end px-gutter-sm transition-all duration-surface-enter">
+                <span class="font-mono text-mono-sm text-light-on-primary tabular-nums">100.0%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-gutter-xs">
+            <div class="flex items-center justify-between gap-gutter-sm">
+              <span class="font-body text-title-sm text-light-on-surface">Punto de Equilibrio (Costos + Gastos)</span>
+              <span class="font-mono text-mono-md text-light-tertiary-container tabular-nums">${fmtPEN(m.puntoEquilibrio)}</span>
+            </div>
+            <div class="w-full h-9 bg-light-surface-container-low rounded overflow-hidden flex items-center border border-light-outline-variant">
+              <div style="width: ${beWidth.toFixed(1)}%" class="h-full bg-light-tertiary-container flex items-center justify-end px-gutter-sm transition-all duration-surface-enter">
+                <span class="font-mono text-mono-sm text-light-on-tertiary tabular-nums">${fmtPct((m.puntoEquilibrio / m.ingresos) * 100)}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-gutter-md rounded border ${isPositive ? 'bg-emerald-tint border-light-secondary/30' : 'bg-coral-tint border-light-error/30'} flex flex-col gap-gutter-xs">
+            <div class="flex items-center justify-between gap-gutter-sm">
+              <div class="flex items-center gap-gutter-xs">
+                <span class="material-symbols-outlined text-title-md ${isPositive ? 'text-light-secondary' : 'text-light-error'}" aria-hidden="true">${isPositive ? 'verified' : 'warning'}</span>
+                <span class="font-body text-title-sm text-light-on-surface">${isPositive ? 'Colchón de Utilidad Operativa' : 'Déficit bajo Punto de Equilibrio'}</span>
+              </div>
+              <span class="font-mono text-mono-md ${isPositive ? 'text-light-secondary' : 'text-light-error'} tabular-nums">${isPositive ? '+' : ''}${fmtPEN(cushion)}</span>
+            </div>
+            <p class="font-body text-body-sm text-light-on-surface-variant tabular-nums">
+              ${isPositive
+                ? `Los ingresos actuales superan el punto de equilibrio en ${fmtPct(cushionPct)}, generando un margen de seguridad sólido antes de impuestos.`
+                : `Los ingresos simulados están ${fmtPct(Math.abs(cushionPct))} por debajo del punto de equilibrio operativo.`}
+            </p>
+          </div>
+        `;
+
+        const pill = document.getElementById('efficiency-cushion-pill');
+        pill.textContent = (isPositive ? '+' : '') + fmtPEN(cushion);
+        pill.className = 'inline-flex items-center px-gutter-sm py-gutter-xs rounded-full font-mono text-mono-sm tabular-nums ' + (isPositive ? 'bg-emerald-tint text-light-secondary' : 'bg-coral-tint text-light-error');
+      }
+
+      function renderPnLTable(m) {
+        const tbody = document.getElementById('pnl-accordion-body');
+        const rows = [
+          { type: 'summary', sign: '(+)', label: 'Ingresos Netos (sin IGV)', badge: 'Ingreso', badgeCls: 'bg-indigo-tint text-indigo-accent', amount: m.ingresos, pct: 100.0, amtCls: 'text-indigo-accent' },
+          { type: 'accordion', key: 'costos', sign: '(-)', label: 'Costos de Ventas', badge: '9 partidas', badgeCls: 'bg-amber-tint text-light-tertiary-container', amount: -m.costosVentas, pct: (m.costosVentas / m.ingresos) * 100, amtCls: 'text-light-tertiary-container' },
+          { type: 'subtotal', sign: '(=)', label: 'Utilidad Bruta', badge: 'Margen Bruto', badgeCls: 'bg-emerald-tint text-light-secondary', amount: m.utilidadBruta, pct: (m.utilidadBruta / m.ingresos) * 100, amtCls: m.utilidadBruta >= 0 ? 'text-light-secondary' : 'text-light-error' },
+          { type: 'accordion', key: 'adm', sign: '(-)', label: 'Gastos Administrativos', badge: state.excludeAfp ? '11 activas (AFP excl.)' : '12 partidas', badgeCls: 'bg-amber-tint text-light-tertiary-container', amount: -m.gastosAdm, pct: (m.gastosAdm / m.ingresos) * 100, amtCls: 'text-light-tertiary-container' },
+          { type: 'accordion', key: 'com', sign: '(-)', label: 'Gastos Comerciales', badge: '9 partidas', badgeCls: 'bg-amber-tint text-light-tertiary-container', amount: -m.gastosCom, pct: (m.gastosCom / m.ingresos) * 100, amtCls: 'text-light-tertiary-container' },
+          { type: 'subtotal', sign: '(=)', label: 'Utilidad Operativa', badge: 'EBIT', badgeCls: 'bg-emerald-tint text-light-secondary', amount: m.utilidadOperativa, pct: m.margenOperativo, amtCls: m.utilidadOperativa >= 0 ? 'text-light-secondary' : 'text-light-error' },
+          { type: 'summary', sign: '(-)', label: 'Impuesto a la Renta (1%)', badge: 'Tributo', badgeCls: 'bg-coral-tint text-light-on-error-container', amount: -m.impuestoRenta, pct: (m.impuestoRenta / m.ingresos) * 100, amtCls: 'text-light-error' },
+          { type: 'final', sign: '(=)', label: 'Utilidad Neta Final', badge: 'Resultado Neto', badgeCls: 'bg-emerald-tint text-light-secondary', amount: m.utilidadNeta, pct: m.margenNeto, amtCls: m.utilidadNeta >= 0 ? 'text-light-secondary' : 'text-light-error' }
+        ];
+
+        let html = '';
+        rows.forEach(r => {
+          if (r.type === 'accordion') {
+            const isOpen = state.expanded[r.key];
+            html += `
+              <tr data-accordion-trigger="${r.key}" class="cursor-pointer hover:bg-light-surface-container-low transition-colors duration-state-change ease-state-change">
+                <td class="px-gutter-md py-gutter-sm">
+                  <div class="flex items-center gap-gutter-sm">
+                    <span class="material-symbols-outlined text-title-md text-light-on-surface-variant transition-transform duration-state-change ${isOpen ? 'rotate-90' : ''}" aria-hidden="true">chevron_right</span>
+                    <span class="font-mono text-mono-sm text-light-on-surface-variant">${r.sign}</span>
+                    <span class="font-body text-title-sm text-light-on-surface">${r.label}</span>
+                  </div>
+                </td>
+                <td class="px-gutter-md py-gutter-sm">
+                  <span class="inline-flex items-center px-gutter-sm py-0.5 rounded-full font-body text-label-sm ${r.badgeCls}">${r.badge}</span>
+                </td>
+                <td class="px-gutter-md py-gutter-sm text-right">
+                  <span class="font-mono text-mono-md ${r.amtCls} tabular-nums">${fmtPEN(r.amount)}</span>
+                </td>
+                <td class="px-gutter-md py-gutter-sm text-right">
+                  <span class="font-mono text-mono-sm text-light-on-surface-variant tabular-nums">${fmtPct(r.pct)}</span>
+                </td>
+              </tr>
+            `;
+
+            if (isOpen) {
+              CATEGORIES[r.key].items.forEach(item => {
+                const isExcluded = state.excludeAfp && item.isAfp;
+                html += `
+                  <tr class="bg-light-surface-container-low/60">
+                    <td class="pl-12 pr-gutter-md py-gutter-xs">
+                      <div class="flex flex-wrap items-center gap-gutter-sm">
+                        <span class="font-body text-body-md ${isExcluded ? 'line-through text-light-outline' : 'text-light-on-surface'}">${item.name}</span>
+                        ${item.isAfp ? `<span class="inline-flex items-center px-gutter-sm py-0.5 rounded-full bg-coral-tint text-light-on-error-container font-body text-label-sm">${isExcluded ? 'Excluido en simulación' : 'Pago atrasado'}</span>` : ''}
+                      </div>
+                    </td>
+                    <td class="px-gutter-md py-gutter-xs">
+                      <span class="font-body text-body-sm text-light-on-surface-variant">Partida</span>
+                    </td>
+                    <td class="px-gutter-md py-gutter-xs text-right">
+                      <span class="font-mono text-mono-sm ${isExcluded ? 'line-through text-light-outline' : 'text-light-on-surface'} tabular-nums">${fmtPEN(item.amount)}</span>
+                    </td>
+                    <td class="px-gutter-md py-gutter-xs text-right">
+                      <span class="font-mono text-mono-sm text-light-on-surface-variant tabular-nums">${isExcluded ? '0.0%' : fmtPct((item.amount / m.ingresos) * 100)}</span>
+                    </td>
+                  </tr>
+                `;
+              });
+            }
+          } else {
+            const bgCls = r.type === 'final' ? 'bg-emerald-tint/60' : (r.type === 'subtotal' ? 'bg-light-surface-container-low/40' : '');
+            const labelCls = r.type === 'final' || r.type === 'subtotal' ? 'font-headline text-title-sm text-light-on-surface font-bold' : 'font-body text-title-sm text-light-on-surface';
+            html += `
+              <tr class="${bgCls}">
+                <td class="px-gutter-md py-gutter-sm">
+                  <div class="flex items-center gap-gutter-sm pl-7">
+                    <span class="font-mono text-mono-sm text-light-on-surface-variant">${r.sign}</span>
+                    <span class="${labelCls}">${r.label}</span>
+                  </div>
+                </td>
+                <td class="px-gutter-md py-gutter-sm">
+                  <span class="inline-flex items-center px-gutter-sm py-0.5 rounded-full font-body text-label-sm ${r.badgeCls}">${r.badge}</span>
+                </td>
+                <td class="px-gutter-md py-gutter-sm text-right">
+                  <span class="font-mono text-mono-md font-bold ${r.amtCls} tabular-nums">${fmtPEN(r.amount)}</span>
+                </td>
+                <td class="px-gutter-md py-gutter-sm text-right">
+                  <span class="font-mono text-mono-sm font-semibold text-light-on-surface tabular-nums">${fmtPct(r.pct)}</span>
+                </td>
+              </tr>
+            `;
+          }
+        });
+
+        tbody.innerHTML = html;
+
+        tbody.querySelectorAll('[data-accordion-trigger]').forEach(row => {
+          row.addEventListener('click', () => {
+            const key = row.getAttribute('data-accordion-trigger');
+            state.expanded[key] = !state.expanded[key];
+            renderAll();
+          });
+        });
+      }
+
+      function renderDetailTable(m) {
+        const tbody = document.getElementById('detail-table-body');
+        const allItems = [];
+        ['costos', 'adm', 'com'].forEach(catKey => {
+          const cat = CATEGORIES[catKey];
+          const catTotal = catKey === 'costos' ? m.costosVentas : (catKey === 'adm' ? m.gastosAdm : m.gastosCom);
+          cat.items.forEach(item => {
+            allItems.push({
+              catKey,
+              catLabel: cat.label,
+              catTotal,
+              name: item.name,
+              amount: item.amount,
+              isAfp: !!item.isAfp
+            });
+          });
+        });
+
+        const q = state.detailSearch.trim().toLowerCase();
+        const filtered = allItems.filter(it => {
+          const matchCat = state.detailFilter === 'all' || it.catKey === state.detailFilter;
+          const matchSearch = !q || it.name.toLowerCase().includes(q) || it.catLabel.toLowerCase().includes(q);
+          return matchCat && matchSearch;
+        });
+
+        if (filtered.length === 0) {
+          tbody.innerHTML = `
+            <tr>
+              <td colspan="6" class="px-gutter-md py-gutter-lg text-center font-body text-body-md text-light-on-surface-variant">
+                No se encontraron partidas que coincidan con "${state.detailSearch}".
+              </td>
+            </tr>
+          `;
+          return;
+        }
+
+        tbody.innerHTML = filtered.map((it, idx) => {
+          const isExcluded = state.excludeAfp && it.isAfp;
+          const pctCat = isExcluded ? 0 : (it.amount / it.catTotal) * 100;
+          const pctRev = isExcluded ? 0 : (it.amount / m.ingresos) * 100;
+          return `
+            <tr class="hover:bg-light-surface-container-low transition-colors duration-state-change ease-state-change ${it.isAfp ? 'bg-coral-tint/40' : ''}">
+              <td class="px-gutter-md py-gutter-sm font-mono text-mono-sm text-light-on-surface-variant tabular-nums">${String(idx + 1).padStart(2, '0')}</td>
+              <td class="px-gutter-md py-gutter-sm">
+                <div class="flex flex-wrap items-center gap-gutter-sm">
+                  <span class="font-body text-body-md ${isExcluded ? 'line-through text-light-outline' : 'text-light-on-surface font-medium'}">${it.name}</span>
+                  ${it.isAfp ? `<span class="inline-flex items-center px-gutter-sm py-0.5 rounded-full bg-coral-tint text-light-on-error-container font-body text-label-sm">${isExcluded ? 'Excluido' : 'Alerta: mes anterior'}</span>` : ''}
+                </div>
+              </td>
+              <td class="px-gutter-md py-gutter-sm">
+                <span class="inline-flex items-center px-gutter-sm py-0.5 rounded-full bg-amber-tint text-light-tertiary-container font-body text-label-sm">${it.catLabel}</span>
+              </td>
+              <td class="px-gutter-md py-gutter-sm text-right font-mono text-mono-md ${isExcluded ? 'line-through text-light-outline' : 'text-light-on-surface'} tabular-nums">${fmtPEN(it.amount)}</td>
+              <td class="px-gutter-md py-gutter-sm text-right font-mono text-mono-sm text-light-on-surface-variant tabular-nums">${fmtPct(pctCat)}</td>
+              <td class="px-gutter-md py-gutter-sm text-right font-mono text-mono-sm text-light-on-surface-variant tabular-nums">${fmtPct(pctRev)}</td>
+            </tr>
+          `;
+        }).join('');
+      }
+
+      function renderAll() {
+        const m = computeMetrics();
+        updateKPIs(m);
+        renderWaterfall(m);
+        renderEfficiencyChart(m);
+        renderPnLTable(m);
+        renderDetailTable(m);
+      }
+
+      // Slider events
+      const slider = document.getElementById('revenue-slider');
+      const sliderBadge = document.getElementById('slider-badge');
+      const resetBtn = document.getElementById('reset-sim-btn');
+
+      slider.addEventListener('input', () => {
+        state.variationPct = parseInt(slider.value, 10) || 0;
+        const sign = state.variationPct > 0 ? '+' : '';
+        sliderBadge.textContent = state.variationPct === 0 ? '0% (Base)' : `${sign}${state.variationPct}%`;
+        if (state.variationPct !== 0) {
+          resetBtn.classList.remove('hidden');
+        } else {
+          resetBtn.classList.add('hidden');
+        }
+        renderAll();
+      });
+
+      resetBtn.addEventListener('click', () => {
+        slider.value = '0';
+        state.variationPct = 0;
+        sliderBadge.textContent = '0% (Base)';
+        resetBtn.classList.add('hidden');
+        renderAll();
+      });
+
+      // Toggle AFP Junio
+      const afpToggle = document.getElementById('afp-toggle');
+      const afpThumb = document.getElementById('afp-toggle-thumb');
+      const afpStatus = document.getElementById('afp-status-text');
+
+      afpToggle.addEventListener('click', () => {
+        state.excludeAfp = !state.excludeAfp;
+        afpToggle.setAttribute('aria-checked', String(state.excludeAfp));
+        if (state.excludeAfp) {
+          afpToggle.classList.remove('bg-light-outline-variant');
+          afpToggle.classList.add('bg-light-primary-container');
+          afpThumb.classList.remove('translate-x-0');
+          afpThumb.classList.add('translate-x-5');
+          afpStatus.textContent = 'Escenario normalizado activo (AFP Junio S/ 812.80 excluido)';
+          afpStatus.classList.remove('text-light-on-surface-variant');
+          afpStatus.classList.add('text-light-secondary');
+        } else {
+          afpToggle.classList.add('bg-light-outline-variant');
+          afpToggle.classList.remove('bg-light-primary-container');
+          afpThumb.classList.add('translate-x-0');
+          afpThumb.classList.remove('translate-x-5');
+          afpStatus.textContent = 'Márgenes contables reales del mes (incluye AFP Junio)';
+          afpStatus.classList.add('text-light-on-surface-variant');
+          afpStatus.classList.remove('text-light-secondary');
+        }
+        renderAll();
+      });
+
+      // Tabs
+      const tabResumen = document.getElementById('tab-resumen');
+      const tabDetalle = document.getElementById('tab-detalle');
+      const panelResumen = document.getElementById('panel-resumen');
+      const panelDetalle = document.getElementById('panel-detalle');
+
+      function switchTab(target) {
+        state.activeTab = target;
+        if (target === 'resumen') {
+          tabResumen.setAttribute('aria-selected', 'true');
+          tabResumen.setAttribute('tabindex', '0');
+          tabResumen.className = 'inline-flex items-center gap-gutter-sm px-gutter-md py-gutter-sm rounded bg-light-surface-container-lowest text-light-primary-container shadow-sm transition-colors duration-state-change ease-state-change';
+          tabDetalle.setAttribute('aria-selected', 'false');
+          tabDetalle.setAttribute('tabindex', '-1');
+          tabDetalle.className = 'inline-flex items-center gap-gutter-sm px-gutter-md py-gutter-sm rounded text-light-on-surface-variant hover:text-light-on-surface transition-colors duration-state-change ease-state-change';
+          panelResumen.hidden = false;
+          panelDetalle.hidden = true;
+        } else {
+          tabDetalle.setAttribute('aria-selected', 'true');
+          tabDetalle.setAttribute('tabindex', '0');
+          tabDetalle.className = 'inline-flex items-center gap-gutter-sm px-gutter-md py-gutter-sm rounded bg-light-surface-container-lowest text-light-primary-container shadow-sm transition-colors duration-state-change ease-state-change';
+          tabResumen.setAttribute('aria-selected', 'false');
+          tabResumen.setAttribute('tabindex', '-1');
+          tabResumen.className = 'inline-flex items-center gap-gutter-sm px-gutter-md py-gutter-sm rounded text-light-on-surface-variant hover:text-light-on-surface transition-colors duration-state-change ease-state-change';
+          panelDetalle.hidden = false;
+          panelResumen.hidden = true;
+        }
+      }
+
+      tabResumen.addEventListener('click', () => switchTab('resumen'));
+      tabDetalle.addEventListener('click', () => switchTab('detalle'));
+
+      // Expand / Collapse all
+      document.getElementById('expand-all-btn').addEventListener('click', () => {
+        state.expanded = { costos: true, adm: true, com: true };
+        renderAll();
+      });
+      document.getElementById('collapse-all-btn').addEventListener('click', () => {
+        state.expanded = { costos: false, adm: false, com: false };
+        renderAll();
+      });
+
+      // Detail filter & search
+      document.querySelectorAll('.cat-filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.detailFilter = btn.getAttribute('data-cat-filter');
+          document.querySelectorAll('.cat-filter-btn').forEach(b => {
+            if (b === btn) {
+              b.className = 'cat-filter-btn px-gutter-md py-gutter-xs rounded-full bg-light-primary-container text-light-on-primary-container font-body text-label-lg transition-colors duration-state-change ease-state-change';
+            } else {
+              b.className = 'cat-filter-btn px-gutter-md py-gutter-xs rounded-full bg-light-surface-container-low text-light-on-surface-variant hover:text-light-on-surface font-body text-label-lg transition-colors duration-state-change ease-state-change';
+            }
+          });
+          renderAll();
+        });
+      });
+
+      document.getElementById('detail-search-input').addEventListener('input', (e) => {
+        state.detailSearch = e.target.value;
+        renderAll();
+      });
+
+      // Initial render
+      renderAll();
+    })();
+  </script>
+
+
+</body></html>
